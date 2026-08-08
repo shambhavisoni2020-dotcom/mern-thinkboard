@@ -11,7 +11,7 @@ dotenv.config();
 const PORT = process.env.PORT || 5001;
 
 const app = express();
-const __dirname = path.resolve();
+const __dirname = path.resolve(); // __dirname => gives source for the backend
 
 if(process.env.NODE_ENV !== "production"){
   app.use(cors({
